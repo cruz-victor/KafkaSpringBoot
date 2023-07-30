@@ -1,0 +1,10 @@
+
+#spring.kafka.consumer.bootstrap-servers=127.0.0.1:29092
+spring:
+  main:
+    banner-mode: off
+  kafka:
+    consumer:
+      group-id: default-spring-consumer-vic
+      bootstrap-servers: 127.0.0.1:29092
+      auto-offset-reset: earliest
