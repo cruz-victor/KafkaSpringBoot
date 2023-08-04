@@ -23,8 +23,8 @@ public class KafkaCoreProducerApplication implements CommandLineRunner {
 //    @Autowired
 //    KafkaKeyProducer kafkaKeyProducer;
 
-    @Autowired
-    EmployeeJsonProducer employeeJsonProducer;
+//    @Autowired
+//    EmployeeJsonProducer employeeJsonProducer;
 
     public static void main(String[] args) {
         SpringApplication.run(KafkaCoreProducerApplication.class, args);
@@ -41,11 +41,11 @@ public class KafkaCoreProducerApplication implements CommandLineRunner {
 //            kafkaKeyProducer.send(key, message);
 //        }
 
-        Employee vic;
-        for (int i = 0; i < 5; i++) {
-            vic=new Employee("E"+i,"Employee"+i, LocalDate.now());
-            employeeJsonProducer.send(vic);
-        }
+//        Employee vic;
+//        for (int i = 0; i < 5; i++) {
+//            vic=new Employee("E"+i,"Employee"+i, LocalDate.now());
+//            employeeJsonProducer.send(vic);
+//        }
 
     }
 }
